@@ -4,7 +4,7 @@ artifact: .control/decisions/DEC-002-autopilot-mandate.md
 
 ## Resume
 Iteration: 1 (Finished)
-Run branch: autopilot/DEC-002 (PR #1 ready for owner review: https://github.com/wiradigitalid/jemaat/pull/1)
+Run branch: autopilot/DEC-002 (PR #1 ready for owner review: https://github.com/wiradeltaid/jemaat/pull/1)
 Stopped at: § Finish (all 4 specs and 14 tickets closed, 100% green)
 Blocked: —
 Parked: —
