@@ -1,5 +1,5 @@
 # Written by wdi-method install/update. A trace, not a lockfile.
-wdi_method: 0.6.18
+wdi_method: 0.6.23
 bmad_method: 6.11.0
 engines:
   source: local
@@ -9,10 +9,10 @@ engines:
   # sha256 of each SKILL.md AFTER the flag was stripped, first 12. Informational:
   # engines-invocable decides by looking for the flag, not by comparing these.
   skills:
-    to-spec: a4f330cad50a
-    to-tickets: 148909487edd
-    implement: 01e26295f110
+    to-spec: 1ed6ee8fcdf7
+    to-tickets: 03f8899a3358
+    implement: d0d3ebc584dc
     tdd: 193b791c489d
     code-review: 3abbdfe52540
     domain-modeling: dd4c753a617b
-installed_at: 2026-09-08
+installed_at: 2026-09-18

@@ -16,3 +16,7 @@ build/
 *.test
 bin/
 
+# Local runner configuration (never commit personal runners/credentials)
+.control/custom-dispatch.yaml
+# Ephemeral smoke test artifacts
+.work/smoke/
