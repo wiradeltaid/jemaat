@@ -20,3 +20,7 @@ bin/
 .control/custom-dispatch.yaml
 # Ephemeral smoke test artifacts
 .work/smoke/
+# Ephemeral execution scratch and raw tool dumps
+.work/*.txt
+.work/*.log
+.work/tmp/
