@@ -24,3 +24,9 @@ bin/
 .work/*.txt
 .work/*.log
 .work/tmp/
+# Ephemeral execution scratch and raw tool dumps
+.scratch/*.txt
+.scratch/*.log
+.scratch/*-review-output.md
+.scratch/*-second-opinion.md
+.scratch/tmp/
