@@ -20,5 +20,4 @@ modules:
 ides:
   - claude-code
   - cursor
-  - antigravity
-  - opencode
+
