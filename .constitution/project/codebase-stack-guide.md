@@ -1,21 +1,41 @@
 ---
-status: Draft            # Article 4: Draft MAY be read as guidance, MUST NOT reject a change
-ratified_by: null        # the commit whose content ratifies this file
+status: Accepted
+ratified_by: 5903b59
+playbook:
+  repo: wiradeltaid/ops
+  path: research/wdi-ecosystem-strategy/coding-playbook/
+  local: D:\Developer\wiradeltaid\ops\research\wdi-ecosystem-strategy\coding-playbook\
+  rev: 5903b59
+reads:
+  - 01-principles.md
+  - 02-architecture-and-structure.md
+  - 03-essential-conventions.md
+  - 04-file-size-and-cohesion.md
+  - 05-realtime-and-sync-protocols.md
+  - 06-tooling-and-ratchet.md
+  - 07-ui-architecture-and-design-system.md
+  - stack/go.md
+  - stack/react-typescript.md
+excludes:
+  - stack/rust.md
+  - stack/slint.md
+  - stack/kotlin.md
+  - stack/python.md
 ---
 
 # stack — codebase guide
 
 **Loaded when:** writing or reviewing code.
 
-## Build & Test Commands
+## 1. Toolchains & Runtimes
 
-### Go Backend (`apps/api`)
-- Build: `cd apps/api && go build ./...`
-- Test: `cd apps/api && go test -v ./...`
+- **Backend:** Go 1.22 (`net/http` + SQLite / PostgreSQL).
+- **Frontend:** React 19 / TypeScript 5 + Vite.
+- **Pengecualian Eksternal:** Modul legacy PHP dikecualikan secara eksplisit dari cakupan playbook.
 
-### React Web Admin (`apps/web`)
-- Build: `cd apps/web && npm run build`
-- Test: `cd apps/web && npm test`
+## 2. Command Verifikasi
 
-> **Note on Greenfield State:** Born as draft guidance for SPEC-1-01 scaffolding. It rises to `accepted` when the first wave's distillation fills it from real code, and `ratified_by` MUST then carry the commit holding that code.
-
+```powershell
+go test ./...
+npm run build
+```
